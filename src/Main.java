@@ -1,7 +1,3 @@
-import factory.Logistics;
-import factory.RoadLogistics;
-import factory.SeaLogistics;
-
 public class Main {
     public static void main(String[] args) {
         LogisticsManager manager = LogisticsManager.getInstance();
@@ -9,9 +5,9 @@ public class Main {
         Logistics roadLogistics = new RoadLogistics();
         Logistics seaLogistics = new SeaLogistics();
 
-        Transport truck1 = (Transport) roadLogistics.createTransport();
-        Transport truck2 = (Transport) roadLogistics.createTransport();
-        Transport ship1 = (Transport) seaLogistics.createTransport();
+        Transport truck1 = roadLogistics.createTransport();
+        Transport truck2 = roadLogistics.createTransport();
+        Transport ship1 = seaLogistics.createTransport();
 
         manager.registerTransport(truck1);
         manager.registerTransport(truck2);
