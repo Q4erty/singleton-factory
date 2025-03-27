@@ -1,5 +1,5 @@
 public abstract class Logistics {
 
-    public abstract Truck createTransport();
+    public abstract Transport createTransport();
 
 }

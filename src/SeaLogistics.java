@@ -1,7 +1,7 @@
 public class SeaLogistics extends Logistics {
 
     @Override
-    public Truck createTransport() {
+    public Transport createTransport() {
         return new Ship();
     }
 

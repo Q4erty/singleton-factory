@@ -1,7 +1,7 @@
 public class RoadLogistics extends Logistics {
 
     @Override
-    public Truck createTransport() {
+    public Transport createTransport() {
         return new Truck();
     }
 

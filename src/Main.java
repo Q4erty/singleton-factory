@@ -17,12 +17,12 @@ public class Main {
             Thread.sleep(1000);
             manager.showDeliverySummary();
 
-            Thread.sleep(3000);
+            Thread.sleep(2000);
             manager.showDeliverySummary();
 
-            Thread.sleep(3000);
+            Thread.sleep(2000);
             manager.showDeliverySummary();
-        } catch (InterruptedException e) {
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
